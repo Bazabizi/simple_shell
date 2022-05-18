@@ -1,5 +1,11 @@
 #include "shell.h"
 
+
+	char **commands = NULL;
+	char *line = NULL;
+	char *shell_name = NULL;
+	int status = 0;
+
 /**
  * main - the main shell code
  * @argc: number of arguments passed
@@ -14,14 +20,11 @@
 
 int main(int argc __attribute__((unused)), char **argv)
 {
-	char **commands = NULL;
-	char *line = NULL;
-	char *shell_name = NULL;
-	int status = 0;
 	char **current_command = NULL;
 	int i, type_command = 0;
 	size_t n = 0;
-signal(SIGINT, ctrl_c_handler);
+
+	signal(SIGINT, ctrl_c_handler);
 	shell_name = argv[0];
 	while (1)
 	{
@@ -30,7 +33,8 @@ signal(SIGINT, ctrl_c_handler);
 		if (getline(&line, &n, stdin) == -1)
 		{
 			free(line);
-			exit(status);	}
+			exit(status);
+		}
 			remove_newline(line);
 			remove_comment(line);
 			commands = tokenizer(line, ";");
@@ -49,7 +53,11 @@ signal(SIGINT, ctrl_c_handler);
 			initializer(current_command, type_command);
 			free(current_command);
 		}
-		free(commands); }
+		free(commands);
+	}
 	free(line);
+
 	return (status);
 }
+
+	
