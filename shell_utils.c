@@ -1,5 +1,3 @@
-#include "shell.h"
-
 /**
  *Auth: Natnael Tafesse
  *Nejat Ahmed
@@ -7,7 +5,7 @@
  * Description:
  * the extended functions for main.c
  */
-
+#include "shell.h"
 
 /*
  * parse_command - determines the type of the command
