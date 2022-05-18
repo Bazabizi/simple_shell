@@ -1,6 +1,6 @@
 # shellby - Simple Shell
 
-A simple UNIX command interpreter written as part of the low-level programming and algorithm track at Holberton School.
+A simple UNIX command interpreter written as part of the low-level programming and algorithm track at ALX School.
 
 ## Description
 
@@ -50,7 +50,7 @@ If a command is not found, the return status is 127; if a command is found but i
 All builtins return zero on success and one or two on incorrect usage (indicated by a corresponding error message).
 
 ### Signals
-While running in interactive mode, **shellby** ignores the keyboard input `Ctrl+c`. Alternatively, an input of end-of-file (`Ctrl+d`) will exit the program. 
+While running in interactive mode, **shellby** ignores the keyboard input `Ctrl+c`. Alternatively, an input of end-of-file (`Ctrl+d`) will exit the program.
 
 ### Variable Replacement
 **Shellby** interprets the `$` character for variable replacement.
