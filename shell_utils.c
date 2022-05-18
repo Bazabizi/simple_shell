@@ -1,7 +1,6 @@
 #include "shell.h"
 
 /**
-<<<<<<< HEAD
  * Auth: Nejat Ahmed
  * 		 Natnael Tafesse
  *
