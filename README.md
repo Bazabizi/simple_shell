@@ -116,7 +116,7 @@ The operators `&&` and `||` have equal precedence, followed by `;`.
   * Upon failure, prints a message to `stderr`.
 
 ## Authors
-*Natnael Tafesse\n
+*Natnael Tafesse
 *Nejat Ahmed
 
 
