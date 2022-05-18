@@ -115,8 +115,9 @@ The operators `&&` and `||` have equal precedence, followed by `;`.
   * Removes an environmental variable.
   * Upon failure, prints a message to `stderr`.
 
-## Author
-*Natnael Tafesse  
+## Authors
+*Natnael Tafesse
+*Nejat Ahmed
 
 
 ## Acknowledgements
